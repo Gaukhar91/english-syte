@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Грамматика бөлімі </title>
+  <link rel="stylesheet" href="C:\Users\User\Desktop/сайт 2/style.css" type="text/css" />
+</head>
+</head>
+<body>
+    <!-- Основной блок сайта -->
+    <div id="basic">
+     
+    <!-- Шапка сайта -->
+<div id="head-site">
+    <a href="#"><img src="C:\Users\User\Desktop\сайт 2\images/1.png" alt="Кофейня" title="Кофейня" /></a>
+  <br> ағылшын тілін үйренуге арналған материалдар мен ресурстар
+</div>
+
+
+<!-- Верхнее меню сайта -->
+        <div id="menu-top">
+        <div class="bg-1">
+            <ul>
+            <li><a href="C:\Users\User\Desktop\сайт 2\Басты бет\byz.html">Басты бет</a></li>
+            <li><a href="C:\Users\User\Desktop\сайт 2\Грамматика\grammar.html">Грамматика</a></li>
+            <li><a href="C:\Users\User\Desktop\сайт 2\Тыңдау\tyndau.html">Тыңдау</a></li>
+            <li><a href="C:\Users\User\Desktop\сайт 2\Оқу\oku.html">Оқу</a></li>
+            <li><a href="C:\Users\User\Desktop\сайт 2\Жазу\zhazu.html">Жазу</a></li>
+              <li><a href="C:\Users\User\Desktop\сайт 2\Жаттығулар\zhattigu.html">Жаттығулар</a></li>
+            <li class="none-bg"><a href="C:\Users\User\Desktop\сайт 2\Байланыс\bail.html">Байланыс</a></li>
+            </ul>
+        </div>
+        <div class="bg-2"></div>
+        </div>
+
+<!-- Левое меню и Контент -->
+        <div id="content">
+         
+            <!-- Контент - правый блок -->
+        <div class="right">
+              <h1>Ағылшын тіліндегі Шырайлар (Prepositions)  бойынша тесттер</h1>
+ <p>Ағылшын тіліндегі шырайларға арналған тест сөйлемдердің дұрыс тұжырымдарын тез меңгеруге көмектеседі. Өту кезінде сіздің назарыңызға жауаптың бірнеше нұсқасы ұсынылады, олардың біреуі ғана дұрыс болуы мүмкін. Қайта өту кезінде сіз қажетсіз нұсқаларды көзбен алып тастайсыз, бұл сіздің жадыңызды керемет дамытады және тілді тез үйренуге ықпал етеді.</p>
+            <style>
+    span.quest {font-weight: bold;}
+    label {margin-left: 15px;}
+    .nav {font-size: 17px;}
+</style>
+<div style="border: 2px solid lawngreen; padding: 10px; overflow:auto;">
+    <div style="display:flex; justify-content: space-between;">
+        <a href="C:\Users\User\Desktop\сайт 2\Жаттығулар\zhattigu.html" class="nav">Тесттер тізімі</a>
+        <a href="C:\Users\User\Desktop\сайт 2\Жаттығулар\6.html" class="nav">Алдыңғы тест</a>
+    </div>
+<script>
+// Заголовок страницы (h2)
+var subtitle = 'Ағылшын тіліндегі шырайлар бойынша тесттер';
+// Подзаголовок (h3)
+
+// Это ваши вопросы
+
+var questions=[
+{
+    text: "Tom is proud … his progress in Maths.",
+   answers: ["of",
+          "in",
+          "at"],
+    correctAnswer: 0  // нумерация ответов с нуля!
+},
+{
+    text: "You should listen … your parents' advise.",
+    answers: ["-",
+          "for",
+          "to"],
+    correctAnswer: 2  // нумерация ответов с нуля!
+},
+{
+    text: "This monument is famous … its long history.",   answers: ["of",
+          "for",
+          "about"],
+    correctAnswer:  1 // нумерация ответов с нуля!
+},
+{
+    text: "Don't be angry … her. She really didn't want to hurt you.",
+     answers: ["at",
+          "on",
+          "with"],
+    correctAnswer:  2 // нумерация ответов с нуля!
+},
+{
+    text: "We have been waiting … a bus for twenty minutes already.",   answers: ["for",
+          "--",
+          "of"],
+    correctAnswer:  0 // нумерация ответов с нуля!
+},
+{
+    text: "They looked so funny, that everybody laughed … them.",
+        answers: ["on",
+          "of",
+          "at"],
+    correctAnswer: 2  // нумерация ответов с нуля!
+},
+{
+    text: "He turned off the light, locked the door and went …",
+      answers: ["to",
+          "back",
+          "away"],
+    correctAnswer: 2  // нумерация ответов с нуля!
+},
+{
+    text: "You should take bus 12 and get … at the fifth stop.",
+      answers: ["away",
+          "up",
+          "off"],
+    correctAnswer:  2 // нумерация ответов с нуля!
+},
+];
+var yourAns = new Array;
+var score = 0;
+
+function Engine(question, answer) {yourAns[question]=answer;}
+
+function Score(){
+   var answerText = "Нәтижелері:\n";
+   for(var i = 0; i < yourAns.length; ++i){
+    var num = i+1;
+    answerText=answerText+"\n    № сұрақ"+ num +"";
+    if(yourAns[i]!=questions[i].correctAnswer){
+        answerText=answerText+"\n    Дұрыс жауабы: " +
+        questions[i].answers[questions[i].correctAnswer] + "\n";
+      }
+        else{
+        answerText=answerText+": Дұрыс! \n";
+        ++score;
+        }
+       }  
+
+   answerText=answerText+"\nДұрыс жауаптар саны: "+score+"\n";
+
+   alert(answerText);
+   yourAns = [];
+   score = 0;
+   clearForm("quiz");
+}
+function clearForm(name) {
+   var f = document.forms[name];
+   for(var i = 0; i < f.elements.length; ++i) {
+    if(f.elements[i].checked)
+        f.elements[i].checked = false;
+}
+}
+</script>
+<h2><script>document.write(title)</script></h2>
+<h3><script>document.write(subtitle)</script></h3>
+
+    <form name="quiz">
+    <ol>
+        <script>
+        for(var q=0; q<questions.length; ++q) {
+           var question = questions[q];
+           var idx = 1 + q;
+
+           document.writeln('<li><span class="quest">' + question.text + '</span><br>');
+           for(var i in question.answers) {
+            document.writeln('<label><input type=radio name="q' + idx + '" value="' + i +
+            '" onClick="Engine(' + q + ', this.value)"> ' + question.answers[i] + '</label><br>');
+        }
+            document.writeln('</li>');
+        }
+        </script>
+    </ol>
+        <br>
+        <input type="button" onClick="Score()" value="Нәтижелерді тексеру">
+    </form>
+    <p><a href="C:\Users\User\Desktop\сайт 2\Жаттығулар\8.html" class="nav">Келесі тест</a></p>
+</div>
+</div>
+        
+             </div>
+        <!-- Левое меню - левый блок блок -->
+        <div class="left">
+            <div id="left-menu">
+                <div class="block-nad-menu"></div>
+                <div class="block-menu">
+               <ul>
+                <li><a href="1.html">Артикль (Article)</a></li>
+                <li><a href="2.html">Зат есім (Noun)</a></li>
+                <li><a href="3.html">Есімдік (Pronoun)</a></li>
+                <li><a href="4.html">Сын есім (Adjective)</a></li>
+                <li><a href="5.html">Үстеу (Adverb)</a></li>
+                <li><a href="6.html">Сан есім (Numeral)</a></li>
+                <li><a href="7.html">Шырайлар (Prepositions)</a></li>
+                <li><a href="8.html">Одағайлар (Conjunctions)</a></li>
+                <li><a href="10.html">Модальдық етістік (Modal Verb)</a></li>
+                <li class="none-bg"><a href="24.html">Жанама сөйлемдер</a></li>
+                <li class="none-bg"><a href="25.html">Шартты ұсыныстар (шарттар)</a></li>
+                <li class="none-bg"><a href="26.html">Шылау (Interjection)</a></li>
+                </ul>
+                </div>
+            <div class="block-pod-menu"></div>
+            </div>
+          </div>
+           <div class="myclr"></div>
+         
+     <!-- Подвал -->
+        <div id="podval">
+            <div class="yellow"></div>
+            <div class="p1">© 2011-2022 <a href="byz.html">English-help.kz </a>
+                Ақпаратты көшіру кезінде сайтқа жарамды еренсілтеме қажет.<br/>
+           Ағылшын тілін онлайн үйрену.</div>
+            <div class="p2"><a href="C:\Users\User\Desktop\сайт 2\Байланыс\bail.html">Кері байланыс</a></div>
+            <div class="p3">|</div>
+            <div class="p4"><a href="C:\Users\User\Desktop\сайт 2\Басты бет\toliq.html">Сайт туралы</a></div>
+        </div>
+        <div class="myclr"></div>
+         
+    </div> 
+     
+</body>
+</html>
